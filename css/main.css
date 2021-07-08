@@ -21,20 +21,19 @@ html {
   src: url('../fonts/FZZZHUNHJW.ttf');
 }
 .st {
-  background-color: white;
+  background-color: #06214e;
 }
 .st .bg {
   width: 100%;
   height: 100%;
-  background-image: url(../images/backgrond.png);
+  background-image: url(../images/bg1.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative;
 }
 .st .qcdb {
-  width: 85%;
+  width: 65%;
   padding-top: 1.1rem;
-  padding-bottom: 0.5rem;
   margin: 0 auto;
 }
 .st .qcdb img {
@@ -139,7 +138,7 @@ html {
   width: 100%;
   height: auto;
 }
-/* .st .huan {
+.st .huan {
   width: 100%;
   height: 3.9rem;
   position: absolute;
@@ -147,44 +146,14 @@ html {
   animation: run 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  transform-origin: 50% 3.9rem; */
-/* } */
-/* .st .huan img {
+  transform-origin: 50% 3.9rem;
+}
+.st .huan img {
   width: 120%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-} */
-#wave1{
-  position: absolute;;
-  bottom: 0;
-  animation: waving1 6s ease-in-out infinite;
-  animation-direction: alternate;
 }
-#wave2{
-  position: absolute;;
-  bottom: 0;
-  animation: waving2 5s ease-in-out infinite;
-  animation-direction: alternate;
-}
-
-@keyframes waving1{
-  from{
-    bottom: -300px;
-  }
-  to{
-    bottom: -500px;
-  }
-}
-@keyframes waving2{
-  from{
-    bottom: -400px;
-  }
-  to{
-    bottom: -450px;
-  }
-}
-
 .answer .bg {
   width: 100%;
   height: 100%;
@@ -223,6 +192,9 @@ html {
   color: #5e3a22;
   position: relative;
   z-index: 2;
+}
+.answer .answerBox .br{
+	height:10%;
 }
 .answer .answerBox .answerA {
   padding: 1.2rem 0.9rem 0 0.9rem;
@@ -269,28 +241,45 @@ html {
   transition: all 0.5s;
 }
 .answer .nexBtn {
-  width: 2.2rem;
-  height: 0.7rem;
+  width: 3.3rem;
+  height: 1.95rem;
   background-image: url(../images/next.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
   position: absolute;
-  top: 83%;
+  top: 75%;
   left: 50%;
   z-index: 10;
-  margin-left: -1.1rem;
+  margin-left: -1.65rem;
 }
 .answer .nexBtn.active {
-  background-image: url(../images/viewre.jpg);
+  background-image: url(../images/viewre.png);
 }
 .answer .qer {
   animation-delay: 0.5s;
+}
+.answer .hailang img{
+	width:100%;
+	position:fixed;
+    bottom:0px;
+    left:0px;
+	
+}
+.answer .hailang .imgg{
+	animation: updown1 5s;
+ 	animation-timing-function: ease-in-out;
+  	animation-iteration-count: infinite;
+}
+.answer .hailang .imggg{
+	animation: updown2 5s;
+ 	animation-timing-function: ease-in-out;
+  	animation-iteration-count: infinite;
 }
 .result .bg {
   width: 100%;
   height: 100%;
   padding-top: 2rem;
-  background-image: url(../images/backgrond.png);
+  background-image: url(../images/qbg.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative;
@@ -298,7 +287,7 @@ html {
 }
 .result .reBox {
   width: 80%;
-  height: 90%;
+  height: 70%;
   background-color: rgba(255, 255, 255, 0.4);
   margin: 0 auto;
   border-radius: 0.4rem;
@@ -558,22 +547,26 @@ html {
   top: 0;
   left: 0;
 }
-/* @keyframes run {
+@keyframes run {
   from {
     transform: rotateZ(0);
   }
   to {
     transform: rotateZ(360deg);
   }
-} */
-#banner-text{
-  position: absolute;
-  top:0px;
-  animation: banner-text 3s ease-in-out infinite;
-  animation-direction: alternate;
 }
-@keyframes banner-text {
-  from{
-    transform: translateX(-400px);
-  }
+
+@keyframes updown1 {
+    0%   {transform: translateY(0)}
+	25%  {transform: translateY(5px)}
+	50%  {transform: translateY(-10px)}
+	75%  {transform: translateY(5px)}
+	100% {transform: translateY(0)}
+}
+@keyframes updown2 {
+    0%   {transform: translateY(0)}
+	25%  {transform: translateY(-5px)}
+	50%  {transform: translateY(15px)}
+	75%  {transform: translateY(-5px)}
+	100% {transform: translateY(0)}
 }
