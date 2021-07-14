@@ -6,7 +6,7 @@ var app = {
     $('.djks').click(function () {
       var name = $('input').val();
       window.sessionStorage.setItem('name', name);
-      location.href = './answer/answer.html';
+      location.href = './answer.html';
     });
   },
   answer2: function () {
@@ -19,7 +19,7 @@ var app = {
       console.log(data[n]);
       if (n > 9) {
         console.log('最后一题');
-        location.href = './result.html';
+        location.href = '../result.html';
       } else {
         $('.answerBox .answerA').hide();
         $('.answerBox ul').hide();
@@ -68,7 +68,7 @@ var app = {
     var index = Math.floor((Math.random()*hudata.length)); 
     console.log(hudata[index]);
     // console.log(hudata);
-    $('.imgBox img').attr('src','images/'+hudata[index].t+'.png');
+    $('.imgBox img').attr('src','images/'+(index+1)+hudata[index].t+'.png');
     $('.huname div').text(hudata[index].t);
     $('.content div').text(hudata[index].r);
   },

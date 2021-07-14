@@ -26,7 +26,7 @@ html {
 .st .bg {
   width: 100%;
   height: 100%;
-  background-image: url(../images/bg1.jpg);
+  background-image: url(/images/backgrond.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative;
@@ -158,7 +158,7 @@ html {
   width: 100%;
   height: 100%;
   padding-top: 2rem;
-  background-image: url(../images/qbg.jpg);
+  background-image: url("/images/backgrond.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative;
@@ -365,7 +365,7 @@ html {
   height: 0.7rem;
 }
 .result .btnBox .again {
-  background-image: url(../images/button-restart.png);
+  background-image: url(../images/再测一次.png);
 }
 .result .btnBox .save {
   background-image: url(../images/692413359442446941.jpg);
@@ -570,3 +570,11 @@ html {
 	75%  {transform: translateY(-5px)}
 	100% {transform: translateY(0)}
 }
+
+.st .bg {
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/backgrond.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;}
