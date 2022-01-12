@@ -42,35 +42,7 @@ var jsFunction = {
         location.href = './answer/answer.html';
       });
     }
-
-
     
-  },
-  answer2: function () {
-    $('.answerBox ul').on('click', 'li', function () {
-      $(this).addClass('active').siblings().removeClass('active');
-    });
-    var n = 0;
-    $('.nexBtn').click(function () {
-      n++;
-      console.log(data[n]);
-      if (n > 9) {
-        location.href = './result.html';
-      } else {
-        $('.answerBox .answerA').hide();
-        $('.answerBox ul').hide();
-        $('.answerBox .answerA').text(data[n].a);
-        for (var i = 0; i < data[n].q.length; i++) {
-          $('.answerBox ul li').eq(i).find('span').text(data[n].q[i]);
-        }
-        if (n >= 9) {
-          $(this).addClass('active');
-        }
-        $('.answerBox .answerA').show();
-        $('.answerBox ul').show();
-      }
-
-    });
   },
   result: function () {
     //get name from cookie

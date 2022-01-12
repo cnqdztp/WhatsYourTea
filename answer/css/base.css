@@ -30,21 +30,10 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
     background-color: #fff;
     -webkit-appearance: none;
 }
-/*自定义*/
-.fl {
-	float: left;
-}
-.fr {
-	float: right;
-}
-.clear {
-	clear: both;
-}
-.clearfix:after{ 
-    content: "";
-    display: block;
-    clear: both;
-} 
+
+
+
+/* 媒体查询 */
 @media only screen and (min-width:320px) {
     html {
         font-size: 50px
