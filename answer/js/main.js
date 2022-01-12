@@ -11,7 +11,6 @@ var answer = {
         return;
         }
       n++;
-      console.log($('.answerBox ul li'));
       //remove both answerbox active class
       $('.answerBox ul li').removeClass('active');
       if (n > 9) {
@@ -19,11 +18,13 @@ var answer = {
       } else {
         $('.answerBox .answerA').hide();
         $('.answerBox ul').hide();
+        //read next data
         $('.answerBox .answerA').text(data[n].a);
         for (var i = 0; i < data[n].q.length; i++) {
           $('.answerBox ul li').eq(i).find('span').text(data[n].q[i]);
         }
         if (n >= 9) {
+          //in case page doesn't load instantly
           $(this).addClass('active');
         }
         $('.answerBox .answerA').show();
