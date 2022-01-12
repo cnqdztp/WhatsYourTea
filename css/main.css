@@ -126,7 +126,7 @@ html {
   font-weight: bold;
   margin-left: -2rem;
 }
-.st .djks {
+.st .nameInputPopover {
   width: 2.5rem;
   position: absolute;
   top: 65%;
@@ -135,7 +135,7 @@ html {
   animation-duration: 1s;
   animation-delay: 0.5s;
 }
-.st .djks img {
+.st .nameInputPopover img {
   width: 100%;
   height: auto;
 }
@@ -378,9 +378,7 @@ html {
 .result .btnBox .again {
   background-image: url(../images/button-restart.png);
 }
-.result .btnBox .save {
-  background-image: url(../images/692413359442446941.jpg);
-}
+
 .result .btnBox .save a {
   display: block;
   width: 100%;
@@ -411,29 +409,8 @@ html {
   top: 0;
   left: 0;
 }
-.result canvas {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.result .jt {
-  width: 0.45rem;
-  height: 0.5rem;
-  position: absolute;
-  bottom: 0.6rem;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.result .jt div {
-  width: 0.45rem;
-  height: 0.5rem;
-  animation-iteration-count: infinite;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(../images/箭头.png);
-}
+
+
 .result .mark {
   display: none;
   width: 100%;
@@ -473,107 +450,4 @@ html {
 .result .mark .fenx {
   padding-top: 0.5rem;
   line-height: 0.5rem;
-}
-.end .bg {
-  width: 100%;
-  height: 100%;
-  background-image: url(../images/bg1.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: relative;
-  padding-top: 0.5rem;
-}
-.end .luoma {
-  width: 70%;
-  margin: 0 auto;
-}
-.end .luoma img {
-  width: 100%;
-}
-.end .huodong {
-  color: #fff;
-  font-size: 0.28rem;
-  text-align: center;
-  margin-top: 0.1rem;
-}
-.end .huodong div {
-  display: inline-block;
-  width: 2rem;
-  height: 0.4rem;
-  border-radius: 0.3rem;
-  line-height: 0.44rem;
-  background-color: #2ea591;
-}
-.end .huodong.data {
-  margin-top: 0.3rem;
-}
-.end .content {
-  color: #ffffff;
-  text-align: center;
-  font-size: 0.24rem;
-  line-height: 0.4rem;
-  padding-top: 0.25rem;
-}
-.end .content span {
-  color: #ffda43;
-}
-.end .imgBox {
-  text-align: center;
-}
-.end .imgBox div {
-  display: inline-block;
-  width: 0.9rem;
-  height: 0.9rem;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.end .imgBox div.img1 {
-  background-image: url(../images/LOGO-1@2x.png);
-}
-.end .imgBox div.img2 {
-  background-image: url(../images/LOGO-2@2x.png);
-}
-.end .db {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-}
-.end .db .code {
-  width: 1.2rem;
-  height: 1.2rem;
-  margin-left: 0.5rem;
-  float: left;
-}
-.end .db .code img {
-  width: 100%;
-}
-.end .db .wz {
-  font-size: 0.22rem;
-  color: #eee7d9;
-  float: left;
-  padding-left: 1.9rem;
-  padding-right: 0.1rem;
-  padding-top: 0.1rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-/* @keyframes run {
-  from {
-    transform: rotateZ(0);
-  }
-  to {
-    transform: rotateZ(360deg);
-  }
-} */
-#banner-text{
-  position: absolute;
-  top:0px;
-  animation: banner-text 3s ease-in-out infinite;
-  animation-direction: alternate;
-}
-@keyframes banner-text {
-  from{
-    transform: translateX(-400px);
-  }
 }
