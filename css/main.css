@@ -321,7 +321,7 @@ html {
   font-size: 0.3rem;
   animation-delay: 1s;
 }
-.result .reBox .huname {
+.result .reBox .tea-name {
   width: 2.3rem;
   height: 0.6rem;
   line-height: 0.55rem;
@@ -330,7 +330,7 @@ html {
   position: relative;
   border-radius: 0.05rem;
 }
-.result .reBox .huname div {
+.result .reBox .tea-name div {
   width: 2.2rem;
   height: 0.46rem;
   font-size: 0.3rem;
