@@ -35,7 +35,7 @@ var jsFunction = {
         $('.mark').show();
       });
   
-      $('.djks').click(function () {
+      $('.nameInputPopover').click(function () {
         var name = $('input').val();
         //store name in cookie
         jsFunction.setCookie("name", name, 1);
