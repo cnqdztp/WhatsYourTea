@@ -25,6 +25,8 @@ var jsFunction = {
 
 
   start: function () {
+    //clear index value from cookie
+    jsFunction.setCookie('index', '', -1);
     //if name exist in cookie
     if (jsFunction.getCookie("name") != "") {
       $('.sBtn').click(function () {
@@ -49,7 +51,14 @@ var jsFunction = {
     var name = jsFunction.getCookie("name");
     $('.reBox h3 span').text(name);
 
-    var index = Math.floor((Math.random()*teaData.length)); 
+    //get index from cookie
+    var index = jsFunction.getCookie("index");
+    //if no index from cookie return
+    if (index == "") {
+      index = Math.floor((Math.random()*teaData.length)); 
+      //store index in cookie
+      jsFunction.setCookie("index", index, 1);
+    }
     $('.imgBox img').attr('src','images/'+teaData[index].t+'.png');
     $('.tea-name div').text(teaData[index].t);
     $('.content div').text(teaData[index].r);
