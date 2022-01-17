@@ -25,6 +25,13 @@ var jsFunction = {
 
 
   start: function () {
+
+    //if window width less than 600px
+    if (window.outerWidth > 600) {
+
+      location.href = 'pcwarning.html';
+    }
+
     //detect if cookie enabled
     if (!navigator.cookieEnabled) {
       //alert
@@ -33,6 +40,10 @@ var jsFunction = {
       location.href = 'cookie.html';
 
     }
+
+
+  
+
     
     //if name exist in cookie
     if (jsFunction.getCookie("name") != "") {

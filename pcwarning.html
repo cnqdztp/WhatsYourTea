@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<title>测测你喝什么茶</title>
+</head>
+
+<body class="st">
+	<div class="bg">
+
+		<h1>你必须使用手机来访问本页面</h5>
+			<p>扫描二维码，访问本页面</p>
+
+		<img src="/images/qrcode_whatsyourtea.capsuleer.me (1).png">
+		<button class="btn" style="border: 1px solid gray; border-radius: 5px; font-size: 15px;">再试一次</button>
+		
+	</div>
+	
+</body>
+<script>
+var btn = document.querySelector('.btn');
+btn.onclick = function(){
+		//detect if cookie enabled
+		if (window.outerWidth < 600) {
+			location.href = 'index.html';
+      //alert
+      
+    }
+	else{
+		alert("Please use a mobile phone to use this site");
+	  window.location.reload();
+}
+	}
+</script>
+</html>
