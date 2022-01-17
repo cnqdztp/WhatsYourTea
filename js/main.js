@@ -26,6 +26,14 @@ var jsFunction = {
 
   start: function () {
     //clear index value from cookie
+    //detect if cookie enabled
+    if (!navigator.cookieEnabled) {
+      //alert
+      alert("Please enable cookies to use this site");
+      //			
+      location.href = 'cookie.html';
+
+    }
     jsFunction.setCookie('index', '', -1);
     //if name exist in cookie
     if (jsFunction.getCookie("name") != "") {
