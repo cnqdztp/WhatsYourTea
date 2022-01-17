@@ -25,7 +25,6 @@ var jsFunction = {
 
 
   start: function () {
-    //clear index value from cookie
     //detect if cookie enabled
     if (!navigator.cookieEnabled) {
       //alert
@@ -34,10 +33,12 @@ var jsFunction = {
       location.href = 'cookie.html';
 
     }
-    jsFunction.setCookie('index', '', -1);
+    
     //if name exist in cookie
     if (jsFunction.getCookie("name") != "") {
       $('.sBtn').click(function () {
+        //clear index value from cookie
+      jsFunction.setCookie('index', '', -1);
         location.href = './answer/answer.html';
       });
     }else {
@@ -49,6 +50,8 @@ var jsFunction = {
         var name = $('input').val();
         //store name in cookie
         jsFunction.setCookie("name", name, 1);
+        //clear index value from cookie
+        jsFunction.setCookie('index', '', -1);
         location.href = './answer/answer.html';
       });
     }
